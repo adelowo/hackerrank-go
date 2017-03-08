@@ -49,7 +49,7 @@ func gradeByProfessorSamRules(grade studentGrades) studentGrades {
 			continue
 		}
 
-		newGrades = append(newGrades, score + 5 - remainder)
+		newGrades = append(newGrades, score+5-remainder)
 	}
 
 	return newGrades

@@ -2,10 +2,10 @@ package main
 
 import (
 	"bufio"
-	"os"
-	"strings"
-	"strconv"
 	"fmt"
+	"os"
+	"strconv"
+	"strings"
 )
 
 const WIDTH = 1
@@ -28,9 +28,9 @@ func main() {
 	var highest int
 
 	for _, v := range strings.TrimSpace(w) {
-		temp := wordHeights[int(v - rune('a'))]
+		temp := wordHeights[int(v-rune('a'))]
 
-		if temp > highest{
+		if temp > highest {
 			highest = temp
 		}
 	}
